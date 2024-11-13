@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frozen Food Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <h1>Frozen Food Store</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#produk">Produk</a>
+            <a href="#kontak">Kontak</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="section">
+        <div class="home-wrap">
+            <div class="home-img">
+                <img src="img/Screenshot 2024-11-12 140242.png">
+            </div>
+            <div class="home-desc">
+                <h2>Selamat Datang di Frozen Food Store</h2>
+                <p>
+                    Menyediakan berbagai jenis makanan beku yang siap dinikmati kapan saja.
+                    Kami menawarkan berbagai pilihan berkualitas dan segar!
+                    <br>
+                    Produk kami berkualitas tinggi, dikemas dengan baik, dan dikirim dengan cepat.
+                    Kami berkomitmen untuk menyediakan produk yang terbaik untuk memenuhi kebutuhan Anda.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- Produk Section -->
+    <section id="produk" class="section">
+        <h2>Produk Kami</h2>
+        <div id="product-container" class="product-grid">
+            <div class="product" onclick="toggleDescription('description1')">
+                <img src="img/bakso ikan.jpg" alt="Produk 1">
+                <h3>Bakso Ikan</h3>
+                <p>Rp30.000</p>
+                <div id="description1" class="product-description">
+                    Bakso ikan yang lembut dan lezat, terbuat dari ikan segar berkualitas.
+                </div>
+            </div>
+            <div class="product" onclick="toggleDescription('description2')">
+                <img src="img/sosis sapi.jpg" alt="Produk 2">
+                <h3>Sosis Sapi</h3>
+                <p>Rp25.000</p>
+                <div id="description2" class="product-description">
+                    Sosis sapi berkualitas tinggi, cocok untuk berbagai hidangan.
+                </div>
+            </div>
+            <div class="product" onclick="toggleDescription('description3')">
+                <img src="img/nugget ayam 2.jpg" alt="Produk 3">
+                <h3>Nugget Ayam</h3>
+                <p>Rp20.000</p>
+                <div id="description3" class="product-description">
+                    Nugget ayam renyah di luar, lembut di dalam.
+                </div>
+            </div>
+            <div class="product" onclick="toggleDescription('description3')">
+                <img src="img/kentang.jpg" alt="Produk 4">
+                <h3>Kentang</h3>
+                <p>Rp20.000</p>
+                <div id="description4" class="product-description">
+                    Kentang yang renyah, cocok untuk camilan.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontak Section -->
+    <section id="kontak" class="section">
+        <h2>Kontak Kami</h2>
+        <p>Email: kontak@domain.com</p>
+        <p>Telepon: 0812-3456-7890</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        Copyright © 2024
+    </footer>
+
+    <!-- Modal -->
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2 id="modal-title">Nama Produk</h2>
+            <p id="modal-description">Deskripsi singkat produk akan ditampilkan di sini.</p>
+            <button id="buy-button" class="buy-button">Beli</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

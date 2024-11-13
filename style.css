@@ -1,0 +1,199 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Sticky Header and Navigation */
+header {
+    background-color: #00aaff;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Sections Styling */
+.section {
+    width: 100%;
+    min-height: 90vh;
+    margin: auto;
+    padding: 40px 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#home, #produk, #kontak {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#home {
+    background-image: url(img/frozen\ food\ bg.jpg);
+    color: #ddd;
+}
+
+#produk {
+    background-image: url(img/frozen\ food\ bg.jpg);
+    color: #ddd;
+}
+
+#kontak {
+    background-image: url(img/frozen\ food\ bg.jpg);
+    color: #ddd;
+}
+
+.home-wrap {
+    display: flex;
+    align-items: center;
+    max-width: 70%;
+}
+
+.home-desc {
+    justify-content: center;
+    align-items: center;
+    padding-left: 100px;
+}
+
+/* Product Grid */
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.product h3 {
+    font-size: 18px;
+    margin: 10px 0 5px;
+}
+
+.product p {
+    font-size: 16px;
+    margin: 0;
+    color: #333;
+}
+
+.product-description {
+    display: none;
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #00aaff;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1001;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.buy-button {
+    background-color: #00aaff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+.buy-button:hover {
+    background-color: #0088cc;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .section {
+        padding: 20px 10px;
+    }
+
+    .home-wrap {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .home-desc {
+        padding: 0;
+        margin-top: 20px;
+    }
+
+    .product {
+        width: 100%;
+    }
+}
